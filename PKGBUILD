@@ -14,8 +14,9 @@
 ## Valid numbers between: 0 to 42
 ## Default is: 0 => generic
 ## Good option if your package is for one machine: 42 => native
+## pondre 42 para usar las instrucciones de mi cpu
 if [ -z ${_microarchitecture+x} ]; then
-  _microarchitecture=0
+  _microarchitecture=42
 fi
 
 ## Disable NUMA since most users do not have multiple processors. Breaks CUDA/NvEnc.
